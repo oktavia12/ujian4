@@ -24,10 +24,10 @@ public class Admin {
 	@GeneratedValue(strategy = GenerationType.IDENTITY) 
 	private long id;
 	
-	@Column(name = "username", length = 25, unique = true)
+	@Column(name = "username")
 	@NotNull
 	private String username;
-	@Column(name = "password", length = 25) 
+	@Column(name = "password") 
 	@NotNull
 	private String password;
 
